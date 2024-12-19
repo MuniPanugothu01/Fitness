@@ -8,7 +8,7 @@ const WorkoutSessions = () => {
         <h1>TOP WORKOUT SESSION</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
           necessitatibus omnis laboriosam ipsa cum eligendi impedit laborum illum!</p>
-        <img src="/img5.jpg" alt="workout" />
+        <img src="/image-3.jpg" alt="workout" />
       </div>
       <div className="wrapper">
         <h1>FEATURED BOOTCAMPS</h1>

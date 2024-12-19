@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
   return (
@@ -17,7 +18,7 @@ const Hero = () => {
 
           <div className="buttons">
             <button>Starts Your Journey</button>
-            <button>Discover Your Plan</button>
+            <button> <Link style={{textDecoration:'none', color:'#0095f'}}>Discover Your Plan</Link> </button>
           </div>
         </div>
       </div>
