@@ -6,6 +6,7 @@ import Pricing from './Pricing'
 import Contact from './Contact';
 import BMICalculator from './BMICalculator';
 import Footer from './Footer';
+import { Link } from 'react-router-dom';
 
 
 const Home = () => {
@@ -27,7 +28,8 @@ const Home = () => {
           <div className="buttons">
             <button>Starts Your Journey</button>
 
-            <button id>Discover Your Plan</button>
+          <Link to={"pricing"}>
+          <button id>Discover Your Plan</button></Link>
 
           </div>
         </div>
