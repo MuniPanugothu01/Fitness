@@ -1,8 +1,10 @@
 import { Check } from "lucide-react";
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Pricing = () => {
+
+  const navigate = useNavigate();
   const pricing = [
     {
       imgUrl: "/pricing.jpg",
@@ -19,7 +21,7 @@ const Pricing = () => {
     {
       imgUrl: "/pricing.jpg",
       title: "YEARLY",
-      price: 65000, 
+      price: 65000,
       length: 12,
     },
   ];
@@ -54,7 +56,7 @@ const Pricing = () => {
                 <p>
                   <Check /> 20 Days Freezing Option
                 </p>
-                <Link to={"/"}>Join Now</Link>
+                <Link to="/form">Join Now</Link> 
               </div>
             </div>
           );

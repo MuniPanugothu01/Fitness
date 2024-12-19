@@ -4,7 +4,7 @@ const Navbar = () => {
   return (
     <header>
       <p>MuscleMind Fitness</p>
-    
+
     </header>
   )
 }

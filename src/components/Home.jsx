@@ -1,9 +1,17 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Navbar from './Navbar';
+import WorkoutSessions from './WorkoutSessions';
+import Gallery from './Gallery';
+import Pricing from './Pricing'
+import Contact from './Contact';
+import BMICalculator from './BMICalculator';
+import Footer from './Footer';
 
-const Hero = () => {
+
+const Home = () => {
   return (
     <section>
+      <Navbar />
       <div className="hero">
         <div className="content">
           <div className="title">
@@ -18,12 +26,23 @@ const Hero = () => {
 
           <div className="buttons">
             <button>Starts Your Journey</button>
-            <button> <Link style={{textDecoration:'none', color:'#0095f'}}>Discover Your Plan</Link> </button>
+
+            <button id>Discover Your Plan</button>
+
           </div>
         </div>
       </div>
+
+
+      <WorkoutSessions />
+      <Gallery />
+      <Pricing />
+      <Contact />
+      <BMICalculator />
+      <Footer />
     </section>
+
   )
 }
 
-export default Hero
+export default Home;
