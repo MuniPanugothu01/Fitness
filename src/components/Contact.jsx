@@ -39,7 +39,7 @@ const Contact = () => {
   return (
     <section className="contact">
       <form onSubmit={sendMail}>
-        <h1>CONTACT US</h1>
+        <h1 ><u style={{color:'#0095ff'}}>CONTACT US</u></h1>
         <div>
           <label>Name</label>
           <input

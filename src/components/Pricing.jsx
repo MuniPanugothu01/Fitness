@@ -27,7 +27,7 @@ const Pricing = () => {
   ];
   return (
     <section className="pricing">
-      <h1>MUSCLEMIND FITNESS PLANS</h1>
+      <h1><u style={{color:'#0095ff'}}>MUSCLEMIND FITNESS PLANS</u> </h1>
       <div className="wrapper">
         {pricing.map((element) => {
           return (

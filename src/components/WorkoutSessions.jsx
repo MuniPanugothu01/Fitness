@@ -5,7 +5,7 @@ const WorkoutSessions = () => {
     <section className="workout_session">
 
       <div className="wrapper">
-        <h1>TOP WORKOUT SESSION</h1>
+        <h1><u style={{ color: '#0095ff' }}>TOP WORKOUT SESSION</u></h1>
         <p style={{
           color: 'black',
           fontFamily: "'Times New Roman', Times, serif",
@@ -17,28 +17,41 @@ const WorkoutSessions = () => {
       </div>
       <div className="wrapper">
         <h1>FEATURED BOOTCAMPS</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Provident enim nisi, vero mollitia ab sequi beatae ratione veritatis.
+        <p style={{ textAlign: 'justify' }}>Featured Bootcamps offer dynamic, high-energy sessions tailored to transform your fitness journey,
+          blending strength, cardio, and
+          functional exercises to challenge every level and achieve remarkable results.
         </p>
         <div className="bootcamps">
           <div>
-            <h4>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h4>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum expedita, soluta autem enim nobis nemo!</p>
+            <h4>HIIT Bootcamp!</h4>
+            <p style={{ textAlign: 'justify' }}>High-Intensity Interval Training sessions focused on short bursts of intense exercise followed by brief rest, targeting fat loss and endurance!</p>
           </div>
 
           <div>
-            <h4>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h4>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum expedita, soluta autem enim nobis nemo!</p>
+            <h4>Strength & Conditioning Bootcamp!</h4>
+            <p style={{ textAlign: 'justify' }}>A mix of weightlifting, resistance training, and bodyweight exercises designed to build strength and improve overall fitness.</p>
           </div>
 
           <div>
-            <h4>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h4>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum expedita, soluta autem enim nobis nemo!</p>
+            <h4>Cardio Blast Bootcamp!</h4>
+            <p style={{ textAlign: 'justify' }}>Energizing workouts combining running, jump ropes, and high-impact cardio movements for maximum calorie burn.</p>
           </div>
 
           <div>
-            <h4>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h4>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum expedita, soluta autem enim nobis nemo!</p>
+            <h4>Functional Fitness Bootcamp!</h4>
+            <p style={{ textAlign: 'justify' }}>Focus on movements that mimic everyday activities, improving balance, core strength, and mobility.</p>
+          </div>
+
+
+          <div>
+            <h4>Core Crusher Bootcamp!</h4>
+            <p style={{ textAlign: 'justify' }}>Intense core-focused exercises to tone and strengthen the abdominal and back muscles.</p>
+          </div>
+
+
+          <div>
+            <h4>Full-Body Burn Bootcamp!</h4>
+            <p style={{ textAlign: 'justify' }}>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum expedita, soluta autem enim nobis nemo!</p>
           </div>
 
         </div>

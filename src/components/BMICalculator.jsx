@@ -44,7 +44,7 @@ const BMICalculator = () => {
 
   return (
     <section className="bmi">
-      <h1>BMI CALCULATOR</h1>
+      <h1><u style={{ color: '#0095ff' }}>BMI CALCULATOR</u></h1>
       <div className="container">
         <div className="wrapper">
           <form onSubmit={calculateBMI}>
