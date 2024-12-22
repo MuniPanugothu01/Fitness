@@ -6,8 +6,13 @@ const WorkoutSessions = () => {
 
       <div className="wrapper">
         <h1>TOP WORKOUT SESSION</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
-          necessitatibus omnis laboriosam ipsa cum eligendi impedit laborum illum!</p>
+        <p style={{
+          color: 'black',
+          fontFamily: "'Times New Roman', Times, serif",
+          textAlign: 'justify',
+        }}>The TOP WORKOUT SESSION is a high-energy fitness experience blending strength, cardio, and functional training
+          with scalable intensity for all levels. Led by expert coaches in an upbeat atmosphere, it includes
+          dynamic warm-ups, engaging drills, and recovery techniques to help you achieve your fitness goals.</p>
         <img src="/image-3.jpg" alt="workout" />
       </div>
       <div className="wrapper">
