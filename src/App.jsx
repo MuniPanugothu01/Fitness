@@ -17,7 +17,7 @@ const App = () => {
 
 
         <Route path="/" element={<Home />} />
-{/* adding the login register form   */}
+        {/* adding the login register form   */}
 
 
 
