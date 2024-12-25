@@ -20,9 +20,9 @@ const Footer = () => {
       <div className="footer-content">
         <div className="footer-info">
           <h3>Gym App</h3>
-          <p>Your fitness journey starts here!</p>
+          <p>Your fitness journey starts here! </p>
           <p>Contact us:</p>
-          <p>Phone:- <a href="tel:+1234567890">+91 9347870616</a></p>
+          <p>Phone:- <a href="tel:+1234567890">+91 9347870616 </a></p>
           <p>Email:- <a href="mailto:contact@gymapp.com">munipanugothu2001@gmail.com</a></p>
         </div>
 
