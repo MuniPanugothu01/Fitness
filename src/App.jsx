@@ -12,19 +12,19 @@ import Formjoin_comp from "../src/Form_join_comp/FormJoin_comp";
 const App = () => {
   return (
     <BrowserRouter>
-    <Routes>
+      <Routes>
 
 
 
-      <Route path="/" element={<Home />} />
-      <Route path="/pricing" element={<Pricing />}/>
-      <Route path="/form" element={<Formjoin_comp />} /> {/* Standalone route */}
+        <Route path="/" element={<Home />} />
+        <Route path="/pricing" element={<Pricing />} />
+        <Route path="/form" element={<Formjoin_comp />} /> {/* Standalone route */}
 
 
-      
-    </Routes>
-    <ToastContainer theme="dark" position="top-center" />
-  </BrowserRouter>
+
+      </Routes>
+      <ToastContainer theme="dark" position="top-center" />
+    </BrowserRouter>
   );
 };
 

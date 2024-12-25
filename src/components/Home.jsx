@@ -7,7 +7,7 @@ import Contact from './Contact';
 import BMICalculator from './BMICalculator';
 import Footer from './Footer';
 import { Link } from 'react-router-dom';
-
+import AboutUs from './AboutUs'
 
 const Home = () => {
   return (
@@ -38,6 +38,7 @@ const Home = () => {
 
 
       <WorkoutSessions />
+      <AboutUs />
       <Gallery />
       <Pricing />
       <Contact />
