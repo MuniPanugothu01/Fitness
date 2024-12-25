@@ -1,0 +1,121 @@
+/* Footer styles */
+.footer {
+    background-image: url('contact.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+    background-attachment: fixed;
+}
+
+/* Footer Info */
+.footer-info {
+    margin-bottom: 1.5rem;
+}
+
+.footer-info h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.footer-info p {
+    margin: 0.5rem 0;
+}
+
+.footer-info a {
+    color: #f0a500;
+    text-decoration: none;
+}
+
+.footer-info a:hover {
+    text-decoration: underline;
+    color: #0095ff;
+}
+
+.footer-social h4 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 2rem;
+    margin: 0 1rem;
+}
+
+.social-icons a:hover {
+    color: #0095ff;
+}
+
+/* Responsive design: Adjust layout for small screens */
+@media (max-width: 767px) {
+    .footer-info h3 {
+        font-size: 1.5rem;
+    }
+
+    .footer {
+        background-image: url('contact.jpg');
+    }
+
+    .footer-info p {
+        font-size: 1rem;
+    }
+
+    .footer-social h4 {
+        font-size: 1.2rem;
+    }
+
+    .social-icons a {
+        font-size: 1.5rem;
+        margin: 0 0.5rem;
+    }
+}
+
+/* Responsive design for medium screens (tablets, etc.) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .footer-info h3 {
+        font-size: 1.8rem;
+    }
+
+    .footer {
+        background-image: url('contact.jpg');
+    }
+
+    .footer-info p {
+        font-size: 1.1rem;
+    }
+
+    .footer-social h4 {
+        font-size: 1.4rem;
+    }
+
+    .social-icons a {
+        font-size: 1.8rem;
+        margin: 0 0.8rem;
+    }
+}
+
+/* Responsive design for large screens (desktops and large screens) */
+@media (min-width: 1024px) {
+    .footer-info h3 {
+        font-size: 2.5rem;
+    }
+
+    .footer-info p {
+        font-size: 1.2rem;
+    }
+
+    .footer {
+        background-image: url('contact.jpg');
+    }
+
+    .footer-social h4 {
+        font-size: 1.8rem;
+    }
+
+    .social-icons a {
+        font-size: 2rem;
+        margin: 0 1rem;
+    }
+}
