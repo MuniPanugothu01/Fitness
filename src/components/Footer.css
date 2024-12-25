@@ -1,6 +1,6 @@
 /* Footer styles */
 .footer {
-    background-image: url('contact.jpg'  );
+    background-image: url('contact.jpg');
     background-size: cover;
     background-position: center;
     color: white;
@@ -20,7 +20,7 @@
 }
 
 .footer-info p {
-    margin: 0.5rem 0 ;
+    margin: 0.5rem 0;
 }
 
 .footer-info a {
