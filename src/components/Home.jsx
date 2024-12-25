@@ -13,6 +13,7 @@ const Home = () => {
   return (
     <section>
       <Navbar />
+
       <div className="hero">
         <div className="content">
           <div className="title">
@@ -24,15 +25,15 @@ const Home = () => {
             <p>Elevate Your Mind. Transform Your Body</p>
             <p>Strength Starts Here.</p>
           </div>
-
           <div className="buttons">
             <button>Starts Your Journey</button>
 
-          <Link to={"pricing"}>
-          <button id>Discover Your Plan</button></Link>
+            <Link to={"pricing"}>
+              <button id>Discover Your Plan</button></Link>
 
           </div>
         </div>
+
       </div>
 
 
