@@ -1,12 +1,15 @@
-/* Footer styles */
 .footer {
     background-image: url('contact.jpg');
     background-size: cover;
+    /* Ensures the image covers the entire area */
     background-position: center;
+    /* Keeps the image centered */
     color: white;
     padding: 2rem 0;
     text-align: center;
-    background-attachment: fixed;
+   
+    background-repeat: no-repeat;
+    /* Prevents the image from repeating */
 }
 
 /* Footer Info */

@@ -1,4 +1,6 @@
+import Contact from './Contact'
 import React from 'react'
+import Footer from './Footer'
 
 const Gallery = () => {
   const gallery = [
@@ -11,36 +13,45 @@ const Gallery = () => {
     "/img5.jpg",
     "/img6.jpg"]
   return (
-    <section className='gallery'>
-      <h1 style={{ textTransform: 'uppercase' }}> <u>Better Beats Best</u> </h1>
-      <div className="images">
-        <div >
-          {
-            gallery.slice(0, 3).map((element, index) => (
-              <img key={index} src={element} alt='galleryImage' />
-            ))
-          }
+
+    <>
+
+      <section className='gallery'>
+        <h1 style={{ textTransform: 'uppercase' }}> <u>Better Beats Best</u> </h1>
+        <div className="images">
+          <div >
+            {
+              gallery.slice(0, 3).map((element, index) => (
+                <img key={index} src={element} alt='galleryImage' />
+              ))
+            }
+          </div>
+
+          <div>
+            {
+              gallery.slice(3, 6).map((element, index) => (
+                <img key={index} src={element} alt='galleryImage' />
+              ))
+            }
+          </div>
+
+
+          <div>
+            {
+              gallery.slice(6, 9).map((element, index) => (
+                <img key={index} src={element} alt='galleryImage' />
+              ))
+            }
+          </div>
+
         </div>
-
-        <div>
-          {
-            gallery.slice(3, 6).map((element, index) => (
-              <img key={index} src={element} alt='galleryImage' />
-            ))
-          }
-        </div>
+      </section>
 
 
-        <div>
-          {
-            gallery.slice(6, 9).map((element, index) => (
-              <img key={index} src={element} alt='galleryImage' />
-            ))
-          }
-        </div>
+      <Contact />
+      <Footer />
+    </>
 
-      </div>
-    </section>
   )
 }
 

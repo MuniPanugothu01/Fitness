@@ -2,6 +2,8 @@ import axios from "axios";
 import React, { useState } from "react";
 import { ClipLoader } from "react-spinners";
 import { toast } from "react-toastify";
+import Gallery from "./Gallery";
+import Footer from "./Footer";
 
 const Contact = () => {
   const [name, setName] = useState("");
@@ -37,48 +39,54 @@ const Contact = () => {
   };
 
   return (
-    <section className="contact">
-      <form onSubmit={sendMail}>
-        <h1 ><u style={{color:'#0095ff'}}>CONTACT US</u></h1>
-        <div>
-          <label>Name</label>
-          <input
-            type="text"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-          />
-        </div>
-        <div>
-          <label>Email</label>
-          <input
-            type="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-          />
-        </div>
-        <div>
-          <label>Message</label>
-          <input
-            type="text"
-            value={message}
-            onChange={(e) => setMessage(e.target.value)}
-          />
-        </div>
-        <button
-          type="submit"
-          disabled={loading}
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            gap: "15px",
-          }}
-        >
-          {loading && <ClipLoader size={20} color="#f1f1f1" />}
-          Send Message
-        </button>
-      </form>
-    </section>
+    <>
+
+
+      <section className="contact">
+        <form onSubmit={sendMail}>
+          <h1 ><u style={{ color: '#0095ff' }}>CONTACT US</u></h1>
+          <div>
+            <label>Name</label>
+            <input
+              type="text"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+            />
+          </div>
+          <div>
+            <label>Email</label>
+            <input
+              type="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
+          </div>
+          <div>
+            <label>Message</label>
+            <input
+              type="text"
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
+            />
+          </div>
+          <button
+            type="submit"
+            disabled={loading}
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              gap: "15px",
+            }}
+          >
+            {loading && <ClipLoader size={20} color="#f1f1f1" />}
+            Send Message
+          </button>
+        </form>
+      </section>
+      <Gallery />
+      <Footer />
+    </>
   );
 };
 
