@@ -13,7 +13,7 @@ const BootstrapNavbar = () => {
     const closeMenu = () => setIsOpen(false); // Close menu after a selection.
 
     return (
-        <nav className="navbar navbar-expand-lg  fixed-top">
+        <nav className="navbar navbar-expand-lg  fixed-top" >
             <div className="container-fluid">
                 <Link className="navbar-brand" to="/" >
                     <img src="/Logo2.webp" alt="Logo" className="navbar-logo" />
