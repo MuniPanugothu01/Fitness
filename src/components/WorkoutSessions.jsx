@@ -1,9 +1,8 @@
 import React from 'react'
 import AboutUs from './AboutUs';
 import Gallery from './Gallery';
-import { Contact } from 'lucide-react';
 import Footer from './Footer';
-
+import Contact from './Contact';
 const WorkoutSessions = () => {
   return (
     <>
@@ -64,10 +63,10 @@ const WorkoutSessions = () => {
         </div>
 
       </section>
-      <AboutUs />
       <Gallery />
-      <Contact />
-      <Footer />
+      {/* <Contact /> */}
+      {/* <Footer /> */}
+
     </>
 
 

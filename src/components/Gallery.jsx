@@ -13,9 +13,7 @@ const Gallery = () => {
     "/img5.jpg",
     "/img6.jpg"]
   return (
-
     <>
-
       <section className='gallery'>
         <h1 style={{ textTransform: 'uppercase' }}> <u>Better Beats Best</u> </h1>
         <div className="images">
@@ -26,7 +24,6 @@ const Gallery = () => {
               ))
             }
           </div>
-
           <div>
             {
               gallery.slice(3, 6).map((element, index) => (
@@ -34,8 +31,6 @@ const Gallery = () => {
               ))
             }
           </div>
-
-
           <div>
             {
               gallery.slice(6, 9).map((element, index) => (
@@ -43,11 +38,8 @@ const Gallery = () => {
               ))
             }
           </div>
-
         </div>
       </section>
-
-
       <Contact />
       <Footer />
     </>

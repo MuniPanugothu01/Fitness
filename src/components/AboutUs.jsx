@@ -3,7 +3,7 @@
 import React from 'react';
 import './AboutUs.css';
 import Gallery from './Gallery';
-import { Contact } from 'lucide-react';
+import Contact from './Contact';
 import Footer from './Footer';
 
 const AboutUs = () => {
@@ -31,7 +31,8 @@ const AboutUs = () => {
             </div>
 
             <Gallery />
-            <Contact />
+            {/* <Contact />  */}
+
             {/* <Footer /> */}
         </>
     );

@@ -39,13 +39,15 @@ const Home = () => {
       </div>
 
 
-      <WorkoutSessions />
+      {/* <WorkoutSessions />
       <AboutUs />
       <Gallery />
       <Pricing />
       <Contact />
       <BMICalculator />
-      <Footer />
+      <Footer /> */}
+      <WorkoutSessions />
+      {/* <AboutUs /> */}
     </section>
 
   )

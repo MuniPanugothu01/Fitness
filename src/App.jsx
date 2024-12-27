@@ -3,13 +3,10 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
 import "./App.css";
-// Import components
 import Home from "./components/Home";
 import Formjoin_comp from "../src/Form_join_comp/FormJoin_comp";
-import 'font-awesome/css/font-awesome.min.css'; // Import Font Awesome globally
-
+import 'font-awesome/css/font-awesome.min.css';
 import { AuthProvider, useAuth } from "./components/AuthContext";
-// import Nav from './components/Nav';
 import Login from "./components/Login";
 import Register from "./components/Register";
 import BootstrapNavbar from "./components/Nav";
@@ -35,6 +32,63 @@ const App = () => {
           <Route path="/register" element={<Register />} />
           <Route
             path="/Workout"
+            element={<WorkoutSessions />}
+          />
+          <Route
+            path="/AboutUs"
+            element={<AboutUs />}
+          />
+          <Route
+            path="/Gallery"
+            element={<Gallery />}
+          />
+          <Route
+            path="/Packages"
+            element={<Pricing />}
+          />
+
+
+          <Route
+            path="/contact"
+            element={<Contact />}
+          />
+
+          <Route
+            path="/BMI"
+            element={<BMICalculator />}
+          />
+
+          {/* <Route
+            path="/Workout"
+            element={<WorkoutSessions />}
+          />
+
+
+          <Route
+            path="/AboutUs"
+            element={<AboutUs />}
+          />
+          <Route
+            path="/Gallery"
+            element={<ProtectedRoute><Gallery /></ProtectedRoute>}
+          /> */}
+
+          {/* <Route
+            path="/Packages"
+            element={<ProtectedRoute><Pricing /></ProtectedRoute>}
+          /> */}
+
+          {/* <Route
+            path="/contact"
+            element={<ProtectedRoute><Contact /></ProtectedRoute>}
+          /> */}
+          {/* <Route path="/pricing" element={<Pricing />} />
+          <Route path="/form" element={<Formjoin_comp />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} /> 
+
+          <Route
+            path="/Workout"
             element={<ProtectedRoute><WorkoutSessions /></ProtectedRoute>}
           />
           <Route
@@ -56,7 +110,7 @@ const App = () => {
           <Route
             path="/BMI"
             element={<ProtectedRoute><BMICalculator /></ProtectedRoute>}
-          />
+          />  */}
         </Routes>
       </AuthProvider>
       <ToastContainer theme="dark" position="top-center" />
@@ -65,9 +119,10 @@ const App = () => {
 };
 
 // Component to handle protected routes
-const ProtectedRoute = ({ children }) => {
-  const { isAuthenticated } = useAuth();
-  return isAuthenticated ? children : <Navigate to="/login" />;
-};
+
+// const ProtectedRoute = ({ children }) => {
+//   const { isAuthenticated } = useAuth();
+//   return isAuthenticated ? children : <Navigate to="/login" />;
+// };
 
 export default App;

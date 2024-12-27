@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { useAuth } from "./AuthContext";
-// import "./navboot.css";
+import "./navboot.css";
 
 const BootstrapNavbar = () => {
     const { isAuthenticated, logout } = useAuth();

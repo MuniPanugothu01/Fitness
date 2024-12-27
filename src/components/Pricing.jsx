@@ -31,7 +31,7 @@ const Pricing = () => {
   return (
 
     <>
-      <section className="pricing" style={{marginTop:'-30px'}}>
+      <section className="pricing" style={{ marginTop: '-30px' }}>
         <h1><u style={{ color: '#0095ff' }}>MUSCLEMIND FITNESS PLANS</u> </h1>
         <div className="wrapper">
           {pricing.map((element) => {
@@ -71,7 +71,7 @@ const Pricing = () => {
 
       <Contact />
       <BMICalculator />
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };

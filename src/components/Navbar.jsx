@@ -2,7 +2,7 @@ import React from 'react';
 
 const Navbar = () => {
   return (
-    <header style={{marginTop:'90px'}}>
+    <header style={{ marginTop: '90px' }}>
       <p>MuscleMind Fitness</p>
 
     </header>
