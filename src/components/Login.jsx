@@ -49,7 +49,7 @@ const Login = () => {
             alert("User not found!");
         } else {
             alert(`Your password is: ${user.password}`);
-        }
+        }s
 
         setForgotPasswordEmail("");
         setShowForgotPassword(false);
