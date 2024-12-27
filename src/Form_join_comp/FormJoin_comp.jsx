@@ -163,7 +163,7 @@ const FormComponent = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await fetch("http://localhost:3001/fitness/join", {
+            const response = await fetch("https://fitness-backend-project.onrender.com/fitness/join", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",

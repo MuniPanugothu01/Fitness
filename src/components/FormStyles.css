@@ -10,6 +10,7 @@ body {
 .Both {
     background: url("login.jpg") rgba(0, 0, 0, 0.1);
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .form-container {
