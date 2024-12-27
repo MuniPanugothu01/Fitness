@@ -183,10 +183,9 @@ const FormComponent = () => {
     };
 
     return (
-        <section style={{ backgroundImage: 'url("form.jpg")',backgroundSize: "cover",backgroundRepeat: "no-repeat",minHeight: "100vh",
-            padding: "1rem", }}>
+        <section className="Section-Form" >
             <div style={{ maxWidth: "400px", margin: "0 auto", padding: "1rem", marginTop: '90px' }}>
-                <h2><u style={{ color: '#0095ff' }}>Subscription Form</u></h2>
+                <h2 style={{ color: '#0095ff' }}><u >Subscription Form</u></h2>
                 <form onSubmit={handleSubmit}>
                     <div style={{ marginBottom: "1rem" }}>
                         <label>First Name:</label>

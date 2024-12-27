@@ -8,10 +8,21 @@ body {
     font-family: Arial, sans-serif;
 }
 
+.Section-Form {
+    background: linear-gradient(rgba(20, 20, 20, 0.7), rgba(24, 24, 24, 0.8)), url(/form.jpg);
+    /* style={{ backgroundImage: 'url("form.jpg")' */
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    padding: 1rem;
+
+}
+
+
 /* Style for the form container */
 div[style*="max-width: 400px"] {
     background: rgba(255, 255, 255, 0.9);
-    border: 1px solid #ccc;
+    border: 1px solid #ed0808;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 8px;
     padding: 2rem;
@@ -38,9 +49,10 @@ div[style*="max-width: 400px"] button {
 }
 
 div[style*="max-width: 400px"] button:hover {
-    background-color: #45a049;
+    background-color: #0095ff;
     transform: translateY(-2px);
 }
+
 
 
 div[style*="max-width: 400px"] h2 {
