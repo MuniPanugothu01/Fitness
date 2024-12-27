@@ -12,7 +12,7 @@ import AboutUs from './AboutUs';
 
 const Home = () => {
   return (
-    <section style={{ marginTop: '50px' }}>
+    <section style={{ marginTop: '1px' }}>
 
       <Navbar />
 

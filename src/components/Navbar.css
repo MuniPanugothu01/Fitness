@@ -1,11 +1,9 @@
 /* General Navbar Styles */
 .navbar {
     background-color: #007bff;
-    /* Navbar background */
     padding: 10px 20px;
     color: white;
     position: sticky;
-    /* Keeps navbar at the top */
     top: 0;
     z-index: 1000;
 }
@@ -14,7 +12,6 @@
 .navbar-container {
     display: flex;
     justify-content: space-evenly;
-    /* Evenly space logo and links */
     align-items: center;
     width: 100%;
 }
@@ -32,7 +29,7 @@
 .navbar-links {
     display: flex;
     gap: 20px;
-    /* Spacing between links */
+
 }
 
 /* Individual Links */

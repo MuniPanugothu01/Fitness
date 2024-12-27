@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { useAuth } from "./AuthContext";
 import "./navboot.css";
+// import "./Navbar.css";
 
 const BootstrapNavbar = () => {
     const { isAuthenticated, logout } = useAuth();
@@ -12,9 +13,11 @@ const BootstrapNavbar = () => {
     const closeMenu = () => setIsOpen(false); // Close menu after a selection.
 
     return (
-        <nav className="navbar navbar-expand-lg bg-light fixed-top">
+        <nav className="navbar navbar-expand-lg  fixed-top">
             <div className="container-fluid">
-                <Link className="navbar-brand" to="/">MyApp</Link>
+                <Link className="navbar-brand" to="/" >
+                    <img src="/Logo2.webp" alt="Logo" className="navbar-logo" />
+                </Link>
                 <div className="spacediv"></div> {/* Adds spacing */}
                 <button
                     className="navbar-toggler"
@@ -129,3 +132,7 @@ const BootstrapNavbar = () => {
 };
 
 export default BootstrapNavbar;
+
+
+
+

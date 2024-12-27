@@ -7,7 +7,7 @@ const WorkoutSessions = () => {
   return (
     <>
 
-      <section className="workout_session" style={{ marginTop: '-10px' }}>
+      <section className="workout_session" style={{ marginTop: '-80px' }}>
 
         <div className="wrapper">
           <h1><u style={{ color: '#0095ff' }}>TOP WORKOUT SESSION</u></h1>
