@@ -5,7 +5,6 @@
 
 .navbar-logo {
     max-height: 50px;
-    /* Adjust the height as needed */
     width: auto;
 }
 
@@ -23,6 +22,7 @@
     font-weight: bold;
     color: #333;
 }
+
 
 .navbar-nav .nav-link {
     font-size: 1rem;

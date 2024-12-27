@@ -16,7 +16,7 @@ const BootstrapNavbar = () => {
         <nav className="navbar navbar-expand-lg  fixed-top" >
             <div className="container-fluid">
                 <Link className="navbar-brand" to="/" >
-                    <img src="/Logo2.webp" alt="Logo" className="navbar-logo" />
+                    <img src="/Logo2.png" alt="Logo" className="navbar-logo" />
                 </Link>
                 <div className="spacediv"></div> {/* Adds spacing */}
                 <button
@@ -33,14 +33,14 @@ const BootstrapNavbar = () => {
                 </button>
                 <div className={`collapse navbar-collapse ${isOpen ? "show" : ""}`} id="navbarNav">
                     <ul className="navbar-nav">
-                        <li className="nav-item">
-                            <Link className="nav-link" to="/" onClick={closeMenu}>Home</Link>
+                        <li className="nav-item" >
+                            <Link className="nav-link active" to="/" onClick={closeMenu} style={{fontSize:'23px'}}>Home</Link>
                         </li>
                         <li className="nav-item">
                             <Link
                                 className={`nav-link ${!isAuthenticated ? "disabled-link" : ""}`}
                                 to="/Workout"
-                                onClick={closeMenu}
+                                onClick={closeMenu} style={{fontSize:'18px'}}
                             >
                                 WorkOuts-session
                             </Link>
@@ -49,7 +49,8 @@ const BootstrapNavbar = () => {
                             <Link
                                 className={`nav-link ${!isAuthenticated ? "disabled-link" : ""}`}
                                 to="/AboutUs"
-                                onClick={closeMenu}
+                                onClick={closeMenu} 
+                                style={{fontSize:'18px'}}
                             >
                                 About-Us
                             </Link>
@@ -61,6 +62,7 @@ const BootstrapNavbar = () => {
                                 className={`nav-link ${!isAuthenticated ? "disabled-link" : ""}`}
                                 to="/Gallery"
                                 onClick={closeMenu}
+                                style={{fontSize:'18px'}}
                             >
                                 Gallary
                             </Link>
@@ -72,6 +74,7 @@ const BootstrapNavbar = () => {
                                 className={`nav-link ${!isAuthenticated ? "disabled-link" : ""}`}
                                 to="/Packages"
                                 onClick={closeMenu}
+                                style={{fontSize:'18px'}}
                             >
                                 Packages
                             </Link>
@@ -83,6 +86,7 @@ const BootstrapNavbar = () => {
                                 className={`nav-link ${!isAuthenticated ? "disabled-link" : ""}`}
                                 to="/contact"
                                 onClick={closeMenu}
+                                style={{fontSize:'18px'}}
                             >
                                 Contact-Us
                             </Link>
@@ -95,6 +99,7 @@ const BootstrapNavbar = () => {
                                 className={`nav-link ${!isAuthenticated ? "disabled-link" : ""}`}
                                 to="/BMI"
                                 onClick={closeMenu}
+                                style={{fontSize:'18px'}}
                             >
                                 BMI-Calculator
                             </Link>
@@ -105,10 +110,10 @@ const BootstrapNavbar = () => {
                         {!isAuthenticated ? (
                             <>
                                 <li className="nav-item">
-                                    <Link className="nav-link" to="/login" onClick={closeMenu}>Login</Link>
+                                    <Link className="nav-link" to="/login" onClick={closeMenu} style={{fontSize:'18px'}} >Login</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link className="nav-link" to="/register" onClick={closeMenu}>Register</Link>
+                                    <Link className="nav-link" to="/register" onClick={closeMenu} style={{fontSize:'18px'}} >Register</Link>
                                 </li>
                             </>
                         ) : (
@@ -119,6 +124,7 @@ const BootstrapNavbar = () => {
                                         logout();
                                         closeMenu();
                                     }}
+                                    style={{fontSize:'18px'}}
                                 >
                                     Logout
                                 </button>
