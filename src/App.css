@@ -541,13 +541,14 @@ header p {
     background-size: cover;
     background-position: center;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
     padding-right: 7rem;
 }
 
+
 .contact form {
-    background: whitesmoke;
+    background: rgba(99, 98, 98, 0.9);
     width: 650px;
     padding: 40px;
     display: flex;
@@ -600,6 +601,14 @@ header p {
         background-position: left;
     }
 }
+
+
+
+
+
+/* contact form style end */
+
+
 
 footer {
     padding: 20px;
