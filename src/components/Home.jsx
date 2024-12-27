@@ -12,22 +12,22 @@ import AboutUs from './AboutUs';
 
 const Home = () => {
   return (
-    <section style={{ marginTop: '1px' }}>
+    <section style={{ marginTop: '80px' }}>
 
       <Navbar />
 
       <div className="hero">
         <div className="content">
-          <div className="title" >
+          <div className="title" style={{marginTop:'-10px'}}>
             <h1 style={{ fontSize: '70px' }}>Consistency</h1>
             <h1 style={{ fontSize: '70px' }}>Is</h1>
             <h1 style={{ fontSize: '70px' }}>Power</h1>
           </div>
-          <div className="sub-title" >
+          <div className="sub-title"  style={{marginTop:'-30px'}}>
             <p>Elevate Your Mind. Transform Your Body</p>
             <p>Strength Starts Here.</p>
           </div>
-          <div className="buttons">
+          <div className="buttons" style={{marginTop:'-20px'}}>
             <button>Starts Your Journey</button>
 
             <Link to={"pricing"}>

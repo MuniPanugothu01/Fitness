@@ -99,3 +99,20 @@ button:hover {
         width: 90%;
     }
 }
+
+
+
+.redirect-message {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.redirect-link {
+    color: blue;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.redirect-link:hover {
+    color: darkblue;
+}

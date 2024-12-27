@@ -138,7 +138,7 @@
 
 
 import React, { useState } from "react";
-
+import "./styles.css"
 const FormComponent = () => {
     const [formData, setFormData] = useState({
         firstName: "",
@@ -183,88 +183,92 @@ const FormComponent = () => {
     };
 
     return (
-        <div style={{ maxWidth: "400px", margin: "0 auto", padding: "1rem" }}>
-            <h2>Subscription Form</h2>
-            <form onSubmit={handleSubmit}>
-                <div style={{ marginBottom: "1rem" }}>
-                    <label>First Name:</label>
-                    <input
-                        type="text"
-                        name="firstName"
-                        value={formData.firstName}
-                        onChange={handleChange}
-                        required
-                        style={{ width: "100%", padding: "8px" }}
-                    />
-                </div>
-                <div style={{ marginBottom: "1rem" }}>
-                    <label>Last Name:</label>
-                    <input
-                        type="text"
-                        name="lastName"
-                        value={formData.lastName}
-                        onChange={handleChange}
-                        required
-                        style={{ width: "100%", padding: "8px" }}
-                    />
-                </div>
-                <div style={{ marginBottom: "1rem" }}>
-                    <label>Phone Number:</label>
-                    <input
-                        type="tel"
-                        name="phoneNumber"
-                        value={formData.phoneNumber}
-                        onChange={handleChange}
-                        required
-                        style={{ width: "100%", padding: "8px" }}
-                    />
-                </div>
-                <div style={{ marginBottom: "1rem" }}>
-                    <label>Email:</label>
-                    <input
-                        type="email"
-                        name="email"
-                        value={formData.email}
-                        onChange={handleChange}
-                        required
-                        style={{ width: "100%", padding: "8px" }}
-                    />
-                </div>
-                <div style={{ marginBottom: "1rem" }}>
-                    <label>Select Package:</label>
-                    <select
-                        name="package"
-                        value={formData.package}
-                        onChange={handleChange}
-                        required
-                        style={{ width: "100%", padding: "8px" }}
-                    >
-                        <option value="" disabled>
-                            Choose a package
-                        </option>
-                        {packageOptions.map((option) => (
-                            <option key={option.value} value={option.value}>
-                                {option.label}
+        <section style={{ backgroundImage: 'url("form.jpg")',backgroundSize: "cover",backgroundRepeat: "no-repeat",minHeight: "100vh",
+            padding: "1rem", }}>
+            <div style={{ maxWidth: "400px", margin: "0 auto", padding: "1rem", marginTop: '90px' }}>
+                <h2><u style={{ color: '#0095ff' }}>Subscription Form</u></h2>
+                <form onSubmit={handleSubmit}>
+                    <div style={{ marginBottom: "1rem" }}>
+                        <label>First Name:</label>
+                        <input
+                            type="text"
+                            name="firstName"
+                            value={formData.firstName}
+                            onChange={handleChange}
+                            required
+                            style={{ width: "100%", padding: "8px" }}
+                        />
+                    </div>
+                    <div style={{ marginBottom: "1rem" }}>
+                        <label>Last Name:</label>
+                        <input
+                            type="text"
+                            name="lastName"
+                            value={formData.lastName}
+                            onChange={handleChange}
+                            required
+                            style={{ width: "100%", padding: "8px" }}
+                        />
+                    </div>
+                    <div style={{ marginBottom: "1rem" }}>
+                        <label>Phone Number:</label>
+                        <input
+                            type="tel"
+                            name="phoneNumber"
+                            value={formData.phoneNumber}
+                            onChange={handleChange}
+                            required
+                            style={{ width: "100%", padding: "8px" }}
+                        />
+                    </div>
+                    <div style={{ marginBottom: "1rem" }}>
+                        <label>Email:</label>
+                        <input
+                            type="email"
+                            name="email"
+                            value={formData.email}
+                            onChange={handleChange}
+                            required
+                            style={{ width: "100%", padding: "8px" }}
+                        />
+                    </div>
+                    <div style={{ marginBottom: "1rem" }}>
+                        <label>Select Package:</label>
+                        <select
+                            name="package"
+                            value={formData.package}
+                            onChange={handleChange}
+                            required
+                            style={{ width: "100%", padding: "8px" }}
+                        >
+                            <option value="" disabled>
+                                Choose a package
                             </option>
-                        ))}
-                    </select>
-                </div>
-                <button
-                    type="submit"
-                    style={{
-                        width: "100%",
-                        padding: "10px",
-                        backgroundColor: "#4CAF50",
-                        color: "white",
-                        border: "none",
-                        cursor: "pointer",
-                        fontSize: "16px",
-                    }}
-                >
-                    Submit
-                </button>
-            </form>
-        </div>
+                            {packageOptions.map((option) => (
+                                <option key={option.value} value={option.value}>
+                                    {option.label}
+                                </option>
+                            ))}
+                        </select>
+                    </div>
+                    <button
+                        type="submit"
+                        style={{
+                            width: "100%",
+                            padding: "10px",
+                            backgroundColor: "#4CAF50",
+                            color: "white",
+                            border: "none",
+                            cursor: "pointer",
+                            fontSize: "16px",
+                        }}
+                    >
+                        Submit
+                    </button>
+                </form>
+            </div>
+
+        </section>
     );
 };
 

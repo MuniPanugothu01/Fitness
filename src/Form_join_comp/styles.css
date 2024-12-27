@@ -1,0 +1,50 @@
+/* Add background image to the page */
+body {
+    background-image: url('Form-img.jpg');
+    /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Style for the form container */
+div[style*="max-width: 400px"] {
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    padding: 2rem;
+    margin-top: 90px;
+}
+
+div[style*="max-width: 400px"] input,
+div[style*="max-width: 400px"] select {
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+div[style*="max-width: 400px"] input:focus,
+div[style*="max-width: 400px"] select:focus {
+    border-color: #0095ff;
+    box-shadow: 0 0 5px rgba(0, 149, 255, 0.5);
+    outline: none;
+}
+
+div[style*="max-width: 400px"] button {
+    border-radius: 4px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+div[style*="max-width: 400px"] button:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+}
+
+
+div[style*="max-width: 400px"] h2 {
+    text-align: center;
+    color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

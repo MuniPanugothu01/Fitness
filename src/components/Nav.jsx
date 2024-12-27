@@ -16,7 +16,7 @@ const BootstrapNavbar = () => {
         <nav className="navbar navbar-expand-lg  fixed-top" >
             <div className="container-fluid">
                 <Link className="navbar-brand" to="/" >
-                    <img src="/Logo2.png" alt="Logo" className="navbar-logo" />
+                    <img src="/Logo1.png" alt="Logo" className="navbar-logo" />
                 </Link>
                 <div className="spacediv"></div> {/* Adds spacing */}
                 <button
@@ -112,9 +112,9 @@ const BootstrapNavbar = () => {
                                 <li className="nav-item">
                                     <Link className="nav-link" to="/login" onClick={closeMenu} style={{fontSize:'18px'}} >Login</Link>
                                 </li>
-                                <li className="nav-item">
+                                {/* <li className="nav-item">
                                     <Link className="nav-link" to="/register" onClick={closeMenu} style={{fontSize:'18px'}} >Register</Link>
-                                </li>
+                                </li> */}
                             </>
                         ) : (
                             <li className="nav-item">
