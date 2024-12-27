@@ -44,9 +44,9 @@ const Contact = () => {
 
       <section className="contact">
         <form onSubmit={sendMail}>
-          <h1 ><u style={{ color: '#0095ff' }}>CONTACT US</u></h1>
+          <h1 ><u style={{ color: '#0095ff',textAlign:'center' }}>CONTACT US</u></h1>
           <div>
-            <label>Name</label>
+            <label style={{ color: '#f1f1f1', fontSize: '20px' }}>Name</label>
             <input
               type="text"
               value={name}
@@ -54,7 +54,7 @@ const Contact = () => {
             />
           </div>
           <div>
-            <label>Email</label>
+            <label style={{ color: '#f1f1f1', fontSize: '20px' }}>Email</label>
             <input
               type="email"
               value={email}
@@ -62,7 +62,7 @@ const Contact = () => {
             />
           </div>
           <div>
-            <label>Message</label>
+            <label style={{ color: '#f1f1f1', fontSize: '20px' }}>Message</label>
             <input
               type="text"
               value={message}
@@ -77,6 +77,7 @@ const Contact = () => {
               justifyContent: "center",
               alignItems: "center",
               gap: "15px",
+              borderRadius:'20px'
             }}
           >
             {loading && <ClipLoader size={20} color="#f1f1f1" />}
@@ -84,7 +85,7 @@ const Contact = () => {
           </button>
         </form>
       </section>
-      {/* <Gallery /> */} 
+      {/* <Gallery /> */}
       {/* <Footer /> */}
     </>
   );
