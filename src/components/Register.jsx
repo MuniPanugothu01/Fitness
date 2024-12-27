@@ -1,3 +1,4 @@
+
 // import React, { useState } from "react";
 // import { useNavigate } from "react-router-dom";
 // import './FormStyles.css';
@@ -89,11 +90,19 @@
 //                 {error && <p className="error-message">{error}</p>}
 //                 <button type="submit">Register</button>
 //             </form>
+//             <p className="redirect-message">
+//                 Already have an account?{" "}
+//                 <span className="redirect-link" onClick={() => navigate("/login")}>
+//                     Login
+//                 </span>
+//             </p>
 //         </div>
 //     );
 // };
 
 // export default Register;
+
+
 
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
@@ -140,59 +149,64 @@ const Register = () => {
     };
 
     return (
-        <div className="form-container">
-            <h2>Register</h2>
-            <form onSubmit={handleSubmit}>
-                <input
-                    type="email"
-                    name="email"
-                    placeholder="Email"
-                    value={formData.email}
-                    onChange={handleInputChange}
-                    required
-                />
-                <div className="password-field">
+        <section className="Both">
+            {/* Background Image */}
+            <div className="form-background"></div>
+
+            <div className="form-container">
+                <h2 style={{ color: '#f1f1f1' }}><u>Register</u></h2>
+                <form onSubmit={handleSubmit}>
                     <input
-                        type={showPassword ? "text" : "password"}
-                        name="password"
-                        placeholder="Password"
-                        value={formData.password}
+                        type="email"
+                        name="email"
+                        placeholder="Email"
+                        value={formData.email}
                         onChange={handleInputChange}
                         required
                     />
-                    <span
-                        className="toggle-password"
-                        onClick={() => setShowPassword(!showPassword)}
-                    >
-                        {showPassword ? "🙈" : "👁️"}
+                    <div className="password-field">
+                        <input
+                            type={showPassword ? "text" : "password"}
+                            name="password"
+                            placeholder="Password"
+                            value={formData.password}
+                            onChange={handleInputChange}
+                            required
+                        />
+                        <span
+                            className="toggle-password"
+                            onClick={() => setShowPassword(!showPassword)}
+                        >
+                            {showPassword ? "🙈" : "👁️"}
+                        </span>
+                    </div>
+                    <div className="password-field">
+                        <input
+                            type={showConfirmPassword ? "text" : "password"}
+                            name="confirmPassword"
+                            placeholder="Confirm Password"
+                            value={formData.confirmPassword}
+                            onChange={handleInputChange}
+                            required
+                        />
+                        <span
+                            className="toggle-password"
+                            onClick={() => setShowConfirmPassword(!showConfirmPassword)}
+                        >
+                            {showConfirmPassword ? "🙈" : "👁️"}
+                        </span>
+                    </div>
+                    {error && <p className="error-message">{error}</p>}
+                    <button type="submit" style={{ borderRadius: '20px', marginTop: '0.5rem' }}>Register</button>
+                </form>
+                <p className="redirect-message">
+                    Already have an account?{" "}
+                    <span className="redirect-link" onClick={() => navigate("/login")}>
+                        Login
                     </span>
-                </div>
-                <div className="password-field">
-                    <input
-                        type={showConfirmPassword ? "text" : "password"}
-                        name="confirmPassword"
-                        placeholder="Confirm Password"
-                        value={formData.confirmPassword}
-                        onChange={handleInputChange}
-                        required
-                    />
-                    <span
-                        className="toggle-password"
-                        onClick={() => setShowConfirmPassword(!showConfirmPassword)}
-                    >
-                        {showConfirmPassword ? "🙈" : "👁️"}
-                    </span>
-                </div>
-                {error && <p className="error-message">{error}</p>}
-                <button type="submit">Register</button>
-            </form>
-            <p className="redirect-message">
-                Already have an account?{" "}
-                <span className="redirect-link" onClick={() => navigate("/login")}>
-                    Login
-                </span>
-            </p>
-        </div>
+                </p>
+            </div>
+        </section>
     );
 };
 

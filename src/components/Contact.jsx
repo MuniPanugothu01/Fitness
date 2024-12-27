@@ -84,7 +84,7 @@ const Contact = () => {
           </button>
         </form>
       </section>
-      {/* <Gallery /> */}
+      {/* <Gallery /> */} 
       {/* <Footer /> */}
     </>
   );

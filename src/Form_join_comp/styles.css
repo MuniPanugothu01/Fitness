@@ -1,6 +1,6 @@
 /* Add background image to the page */
 body {
-    background-image: url('Form-img.jpg');
+    /* background-image: url('Form-img.jpg'); */
     /* Replace with your image URL */
     background-size: cover;
     background-position: center;
@@ -9,7 +9,7 @@ body {
 }
 
 .Section-Form {
-    background: linear-gradient(rgba(20, 20, 20, 0.7), rgba(24, 24, 24, 0.8)), url(/form.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.75)), url(/form.jpg);
     /* style={{ backgroundImage: 'url("form.jpg")' */
     background-size: cover;
     background-repeat: no-repeat;
