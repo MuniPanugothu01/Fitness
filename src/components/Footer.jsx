@@ -16,7 +16,7 @@ import './Footer.css'; // Import the footer-specific styles
 
 const Footer = () => {
   return (
-    <footer className="footer">
+    <footer className="footer" >
       <div className="footer-content">
         <div className="footer-info">
           <h3>Gym App</h3>

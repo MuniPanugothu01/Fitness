@@ -1,5 +1,5 @@
 .footer {
-    background-image: url('contact.jpg');
+    background-image: url(/public/contact.jpg);
     background-size: cover;
     /* Ensures the image covers the entire area */
     background-position: center;
