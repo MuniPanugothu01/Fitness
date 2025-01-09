@@ -7,8 +7,8 @@ const Gallery = () => {
     "/img1.webp",
     "/img2.jpg",
     "/img3.jpg",
-    "/img4.jpg",
-    "/img7.jpg",
+    "/home-2.jpg",
+    "/home-3.jpg",
     "/img8.jpg",
     "/img5.jpg",
     "/img6.jpg"]
