@@ -1,15 +1,12 @@
 .footer {
     background-image: url(/public/contact.jpg);
     background-size: cover;
-    /* Ensures the image covers the entire area */
     background-position: center;
-    /* Keeps the image centered */
     color: white;
     padding: 2rem 0;
     text-align: center;
    
     background-repeat: no-repeat;
-    /* Prevents the image from repeating */
 }
 
 /* Footer Info */
@@ -58,7 +55,7 @@
     }
 
     .footer {
-        background-image: url('contact.jpg');
+        background-image: url(/public/contact.jpg);
     }
 
     .footer-info p {
@@ -82,7 +79,7 @@
     }
 
     .footer {
-        background-image: url('contact.jpg');
+        background-image: url(/public/contact.jpg);
     }
 
     .footer-info p {
@@ -110,7 +107,7 @@
     }
 
     .footer {
-        background-image: url('contact.jpg');
+        background-image: url(/public/contact.jpg);
     }
 
     .footer-social h4 {
