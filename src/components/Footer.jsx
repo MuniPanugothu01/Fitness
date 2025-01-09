@@ -1,15 +1,3 @@
-// import React from 'react'
-
-// const Footer = () => {
-//   return (
-//     <footer>
-//         Designed And Developed By Muni Panugothu
-//     </footer>
-//   )
-// }
-
-// export default Footer
-
 import React from 'react';
 import { FaFacebook, FaInstagram, FaTwitter, FaLinkedin, FaGithub } from 'react-icons/fa';
 import './Footer.css'; // Import the footer-specific styles
