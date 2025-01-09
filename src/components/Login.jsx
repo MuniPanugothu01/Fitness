@@ -48,7 +48,7 @@ const Login = () => {
         if (!user) {
             alert("User not found!");
         } else {
-            alert(`Your password is: ${user.password}`);
+            alert(`Your password is!: ${user.password}`);
         }s
 
         setForgotPasswordEmail("");
