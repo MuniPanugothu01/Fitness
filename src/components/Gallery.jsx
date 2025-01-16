@@ -15,7 +15,7 @@ const Gallery = () => {
   return (
     <>
       <section className='gallery'>
-        <h1 style={{ textTransform: 'uppercase' }}> <u>Better Beats Best</u> </h1>
+        <h1 style={{ textTransform: 'uppercase' }}> <u>Better Beats Best!</u> </h1>
         <div className="images">
           <div >
             {
